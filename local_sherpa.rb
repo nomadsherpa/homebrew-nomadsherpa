@@ -9,8 +9,7 @@ class LocalSherpa < Formula
   version "1.0.0-beta.1"
 
   def install
-    p "-------------------------------"
-    #   bin.install "#{buildpath}/bin/skhd"
+    prefix.install Dir["*"]
   end
 
   def caveats
